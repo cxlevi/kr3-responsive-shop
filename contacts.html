@@ -5,40 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Контакты интернет-магазина TechStore: адрес, телефон, email">
   <title>Контакты — TechStore</title>
-  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
   <header class="header">
     <div class="container">
       <a href="index.html" class="header__logo">TechStore</a>
-      <nav class="header__nav">
+      <nav class="header__nav" aria-label="Главная навигация">
         <ul class="nav__list">
           <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
           <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
           <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
-          <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--active">Контакты</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link nav__link--active" aria-current="page">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- СЕКЦИЯ С КАРТОЧКАМИ КОНТАКТОВ -->
+  <main id="main-content">
     <section class="section" id="contacts-info">
       <div class="container">
         <h1 class="section__title">Наши контакты</h1>
         
         <div class="contacts-grid">
           <article class="contact-card">
-            <div class="contact-card__icon">📍</div>
             <h2 class="contact-card__title">Адрес офиса</h2>
             <p class="contact-card__text">
-              г. Москва, пр. Вернандского, д. 78
+              г. Москва, пр. Вернадского, д. 78
             </p>
           </article>
 
           <article class="contact-card">
-            <div class="contact-card__icon">📞</div>
             <h2 class="contact-card__title">Телефон</h2>
             <p class="contact-card__text">
               <a href="tel:+78001234567" class="contact-card__link">8 (800) 123-45-67</a><br>
@@ -47,7 +48,6 @@
           </article>
 
           <article class="contact-card">
-            <div class="contact-card__icon">✉️</div>
             <h2 class="contact-card__title">E-mail</h2>
             <p class="contact-card__text">
               <a href="mailto:info@techstore.ru" class="contact-card__link">info@techstore.ru</a><br>
@@ -56,7 +56,6 @@
           </article>
 
           <article class="contact-card">
-            <div class="contact-card__icon">🕐</div>
             <h2 class="contact-card__title">Часы работы</h2>
             <p class="contact-card__text">
               Пн–Пт: 9:00–20:00<br>
@@ -65,7 +64,6 @@
           </article>
         </div>
 
-        <!-- КАРТА -->
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.0957343418067!2d37.477724977391844!3d55.66993537305361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1791487124391!5m2!1sru!2sru" 
           class="contacts-map" 
@@ -77,7 +75,6 @@
       </div>
     </section>
 
-    <!-- СЕКЦИЯ С ФОРМОЙ ОБРАТНОЙ СВЯЗИ -->
     <section class="feedback-section" id="feedback">
       <div class="container">
         <h2 class="section__title">Напишите нам</h2>
@@ -135,6 +132,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
